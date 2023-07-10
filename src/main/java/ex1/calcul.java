@@ -1,6 +1,9 @@
 package ex1;
-public class Calcul {
 
+/**
+ * Calcul class
+ */
+public class Calcul {
 	/**
 	 * Add a + b
 	 * @param a int

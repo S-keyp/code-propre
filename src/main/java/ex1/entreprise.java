@@ -4,14 +4,14 @@ import java.util.Date;
 
 public class Entreprise {
 
-	public int Siret;
+	public int siret;
 	public String nom;
 	public String adresse;
 	public Date dateCreation;
 	
 	public static final int CAPITAL_MAX = 3000000;
 	
-	public void Afficher_statut(){
+	public void afficherStatut(){
 		
 	}
 	

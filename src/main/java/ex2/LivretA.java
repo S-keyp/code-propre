@@ -12,14 +12,12 @@ public class LivretA extends CompteBancaire {
 	 * @param tauxRemuneration  représente le taux de rémunération du livret A
 	 */
 	public LivretA(String type, double solde, double decouvert, double tauxRemuneration) {
-		super(type, solde, 0);
+		super(solde, 0);
 		this.tauxRemuneration = tauxRemuneration;
 	}
 
 	public void appliquerRemuAnnuelle(){
-		if (this.getType().equals("LA")){
-			this.setSolde(this.getSolde() + this.getSolde() * tauxRemuneration/100);
-		}
+		this.setSolde(this.getSolde() + this.getSolde() * tauxRemuneration/100);
 	}
 
 	/** 
@@ -33,7 +31,6 @@ public class LivretA extends CompteBancaire {
 			this.setSolde(this.getSolde() - montant);
 		}	
 	}
-
 
 
 	/** Getter for tauxRemuneration

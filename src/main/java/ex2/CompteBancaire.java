@@ -4,24 +4,19 @@ package ex2;
  * @author DIGINAMIC
  */
 public class CompteBancaire {
-
 	/** Solde : solde du compte */
 	private double solde;
 	
 	/** Decouvert : un découvert est autorisé seulement pour les comptes courants */
 	private double decouvert;
 	
-	/** Le type vaut soit CC=Compte courant, ou soit LA=Livret A */
-	private String type;
-	
 	/**
 	 * @param type (String)
 	 * @param solde (double)
 	 * @param decouvert (double)
 	 */
-	public CompteBancaire(String type, double solde, double decouvert) {
+	public CompteBancaire(double solde, double decouvert) {
 		super();
-		this.type = type;
 		this.solde = solde;
 		this.decouvert = decouvert;
 	}
@@ -68,17 +63,5 @@ public class CompteBancaire {
 	 */
 	public void setDecouvert(double decouvert) {
 		this.decouvert = decouvert;
-	}
-	/** Getter for type
-	 * @return the type
-	 */
-	public String getType() {
-		return type;
-	}
-	/** Setter
-	 * @param type the type to set
-	 */
-	public void setType(String type) {
-		this.type = type;
 	}
 }

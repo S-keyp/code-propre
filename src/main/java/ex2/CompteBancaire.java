@@ -5,10 +5,10 @@ package ex2;
  */
 public class CompteBancaire {
 
-	/** solde : solde du compte */
+	/** Solde : solde du compte */
 	private double solde;
 	
-	/** decouvert : un découvert est autorisé seulement pour les comptes courants */
+	/** Decouvert : un découvert est autorisé seulement pour les comptes courants */
 	private double decouvert;
 	
 	/** tauxRemuneration : taux de rémunération dans le cas d'un livret A */
@@ -18,9 +18,9 @@ public class CompteBancaire {
 	private String type;
 	
 	/**
-	 * @param solde
-	 * @param decouvert
-	 * @param type
+	 * @param type (String)
+	 * @param solde (double)
+	 * @param decouvert (double)
 	 */
 	public CompteBancaire(String type, double solde, double decouvert) {
 		super();

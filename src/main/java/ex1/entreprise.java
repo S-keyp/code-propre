@@ -21,7 +21,7 @@ public class Entreprise {
 	
 	/**
 	 * Affiche le statut de l'entreprise
-	 * @return void
+	 * @return (void)
 	 */
 	public void afficherStatut(){
 		
